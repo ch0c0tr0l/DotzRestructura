@@ -1,0 +1,36 @@
+.imagen-giratoria {
+    width: auto;
+    height: 100px;
+    animation: girar 20s infinite linear;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.jumbotron {
+    background-image: url('/img/SVG/DOTZ-01_Top4.svg');
+    background-size: cover;
+    border-radius: 0.3rem;
+    text-align: center;
+    height: 300px;
+}
+
+.jumbotron p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .jumbotron h2 {
+        font-size: 2rem;
+    }
+    .jumbotron p {
+        font-size: 1.2rem;
+    }
+}
