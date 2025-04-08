@@ -34,3 +34,123 @@
         font-size: 1.2rem;
     }
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+.logo {
+    flex: 1;
+}
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu li {
+    margin-left: 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+.conexion {
+    color: #0d025a;
+    font-family: 'lato', sans-serif;
+    font-weight: bold;
+}
+.tecno{
+    color: #dfff7f;
+    background-color: #0d025a;
+    font-family: 'lato', sans-serif;
+    font-weight: bold;
+    border-radius: 0 10px 10px 0 ;   
+}
+.des{
+    color: #706f6f;
+    font-family: 'lato', sans-serif;
+}
+.creat{
+    color: #34bf98;
+    font-family: 'lato', sans-serif;
+}
+.circular-image {
+    width:fit-content; /* Ajusta el tamaño según tus necesidades */
+    height: fit-content; /* Debe ser igual al width para mantener la forma circular */
+    border-radius: 50%;
+    overflow: hidden;
+    /*box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3); /* Sombra a la derecha */
+
+  }
+  
+  .circular-image img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover; 
+    position: absolute;/* Asegura que la imagen cubra todo el contenedor */
+  }
+
+.container_img {
+    display: flex;
+}
+.column {
+    flex: 1;
+    padding: 10px;
+}
+.images {
+    position: relative;
+    height: 300px; /* Ajusta según tus necesidades */
+    
+}
+.images img {
+    position: absolute;
+   
+    border-radius: 50%;
+}
+.img1 {
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 220px;
+}
+.img2 {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 220px;
+    height: 220px;
+}
+.img3 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-10%);
+    width: 100px;
+    height: 100px;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+}
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: #706f6f;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #706f6f;
+    border-radius: 50%;
+}
