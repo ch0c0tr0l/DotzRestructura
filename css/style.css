@@ -1,9 +1,8 @@
 body{
-    background-image: url('/img/PNG/DOTZ-Fondo.png');
-}
-.conexion_sec{
-    height: 60vh;
-    background-color: white;
+    background-image: url('/img/SVG/DOTZ-fondo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .imagen-giratoria {
     width: auto;
@@ -180,7 +179,4 @@ body{
 
 .centro{
     text-align: center;
-}
-.green{
-    background-color: #DFF4EB;
 }
