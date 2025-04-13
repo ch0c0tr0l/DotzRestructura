@@ -12,18 +12,41 @@
     <title>DOTZ</title>
 </head>
 <body>
-    <div class="multi_bg_example">
+    <div id="loading-screen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffffff; z-index: 9999; display: flex; justify-content: center; align-items: center;">
+        <img src="img/svg/DOTZ-00_Favicon.svg" alt="Loading" style="width: 300px; animation: spin 20s linear infinite;">
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.style.display = 'none';
+        });
+    </script>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-9">
-                <img src="img/SVG/DOTZ-01_Top1.svg" alt="Logo" width="100">
-            </div>
-            <div class="col-3">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="https://api.whatsapp.com/send?phone=528147992892"><img src="img/SVG/DOTZ-01_Top2.svg" height="30" alt=""></a></li>
-                        <li><a href="#about"><img src="img/SVG/DOTZ-01_Top3.svg" height="30" alt=""></a></li>
-                    </ul>
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/SVG/DOTZ-01_Top1.svg" alt="Logo" width="100">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=528147992892">
+                                        <img src="img/SVG/DOTZ-01_Top2.svg" height="30" alt="">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">
+                                        <img src="img/SVG/DOTZ-01_Top3.svg" height="30" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </div>  
@@ -39,6 +62,7 @@
             </div>        
         </div>
         <br>
+    <div class="multi_bg_example">
         <div class="row">
             <div class="col-3">
                 <img src="img/SVG/DOTZ-02_Somos1.svg" alt="">
@@ -46,56 +70,62 @@
             <div class="col-9">
 
             </div>
+        </div>
         <div class="row">
-            <div class="col-7">
-                <p class="conexion">SOMOS LA CONEXIÓN ENTRE <br> 
-                    <span class="tecno">TECNOLOGÍA, PROCESOS Y ÉXITO</span></p>
-                <p class="des">Imagina por un segundo que cada reto de tu negocio <br>
-                        encuentra su solución perfecta. Eso es DOTZ. Somos el <br>
-                        puente entre tus sueños y resultados concretos.<br><br>
-                        <span class="creat">Con creatividad, pasión y tecnología,</span> trabajamos contigo para <br>
-                        diseñar estrategias que optimizan tus procesos e impulsan el<br> 
-                        futuro de tu negocio
-                </p>
+            <div class="col-12 col-lg-6">
+            <p class="conexion text-center text-lg-start">SOMOS LA CONEXIÓN ENTRE <br> 
+                <span class="tecno">TECNOLOGÍA, PROCESOS Y ÉXITO</span></p>
+            <p class="des text-center text-lg-start">Imagina por un segundo que cada reto de tu negocio <br>
+                encuentra su solución perfecta. Eso es DOTZ. Somos el <br>
+                puente entre tus sueños y resultados concretos.<br><br>
+                <span class="creat">Con creatividad, pasión y tecnología,</span> trabajamos contigo para <br>
+                diseñar estrategias que optimizan tus procesos e impulsan el<br> 
+                futuro de tu negocio
+            </p>
             </div>
-            <div class="col-5">
-                <div class="container_img">
-                    <div class="column images">
-                        <img src="img/SVG/DOTZ-02_Somos2.svg" alt="Imagen 1" class="img1 img-fluid">
-                        <img src="img/SVG/DOTZ-02_Somos3.svg" alt="Imagen 2" class="img2 img-fluid">
-                        <img src="img/SVG/DOTZ-02_Somos4.svg" alt="Imagen 3" class="img3 img-fluid">
-                    </div>
+            <div class="col-12 col-lg-6 d-none d-lg-block">
+            <div class="container_img">
+                <div class="column images">
+                <img src="img/SVG/DOTZ-02_Somos2.svg" alt="Imagen 1" class="img1 img-fluid">
+                <img src="img/SVG/DOTZ-02_Somos3.svg" alt="Imagen 2" class="img2 img-fluid">
+                <img src="img/SVG/DOTZ-02_Somos4.svg" alt="Imagen 3" class="img3 img-fluid">
                 </div>
+            </div>
+            </div>
+        </div>
+        <div class="row d-lg-none">
+            <div class="col-4">
+            <img src="img/SVG/DOTZ-02_Somos2.svg" alt="Imagen 1" class="img-fluid">
+            </div>
+            <div class="col-4">
+            <img src="img/SVG/DOTZ-02_Somos3.svg" alt="Imagen 2" class="img-fluid">
+            </div>
+            <div class="col-4">
+            <img src="img/SVG/DOTZ-02_Somos4.svg" alt="Imagen 3" class="img-fluid">
             </div>
         </div>
         <br><br>
-        <div class="row">
-            <div class="col-5">
-                <div class="line-container">
+        <div class="row text-center text-lg-start align-items-center">
+            <div class="col-12 col-lg-5">
+                <div class="line-container mx-auto mx-lg-0">
                     <div class="line"></div>
                     <div class="circle"></div>
                 </div>
             </div>
-            <div class="col-7">
-                <p class="conexion">SERVICIOS QUE CONECTAN TUS<br> 
-                <span style="color: #34bf98;">NECESIDADES CON RESULTADOS</span></p>
+            <div class="col-12 col-lg-7 mt-3 mt-lg-0">
+            <p class="conexion">SERVICIOS QUE CONECTAN TUS<br> 
+            <span style="color: #34bf98;">NECESIDADES CON RESULTADOS</span></p>
             </div>
         </div>
-        
-        <div class="row">
-
-        </div>
-        <div class="row">
-            <div class="col-1">
-            </div>
-            <div class="col-3">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="card h-100 card_sombra">
                     <br>
                     <br>
                     <img src="img/SVG/DOTZ-03_Servicios1.svg" class="card-img-top servi" alt="...">
                     <br>
-                    <div class="card-body">
-                        <h5 class="card-title conexion centro"><span class="conexion">PRESENCIA DIGITAL</span></h5>
+                    <div class="card-body text-center">
+                        <h5 class="card-title conexion"><span class="conexion">PRESENCIA DIGITAL</span></h5>
                         <br>
                         <p class="card-text des">Creamos sitios web que 
                             cuentan tu historia y lo 
@@ -103,40 +133,38 @@
                             hosting confiable.
                         </p>
                     </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card h-100 card_sombra">
-                <br><br>
-                <img src="img/SVG/DOTZ-03_Servicios2.svg" class="card-img-top servi" alt="...">
-                <br>
-                <div class="card-body">
-                  <h5 class="card-title conexion centro"><span class="conexion">SOPORTE TECNICO</span></h5>
-                  <br>
-                  <p class="card-text des">Somos expertos en 
-                    brindarte el soporte que 
-                    te respalda cuando más 
-                    lo necesitas.</p>
                 </div>
-              </div>
             </div>
-            <div class="col-3">
-              <div class="card h-100 w-100 card_sombra">
-                <br><br>
-                <img src="img/SVG/DOTZ-03_Servicios3.svg" class="card-img-top servi" alt="...">
-                <br>
-                <div class="card-body">
-                  <h5 class="card-title conexion centro"><span class="conexion">DESARROLLO</span></h5>
-                  <br>
-                  <p class="card-text des">Desarrollamos el software 
-                    que hace realidad tus 
-                    ideas y transforma 
-                    oportunidades</p>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 card_sombra">
+                    <br><br>
+                    <img src="img/SVG/DOTZ-03_Servicios2.svg" class="card-img-top servi" alt="...">
+                    <br>
+                    <div class="card-body text-center">
+                    <h5 class="card-title conexion"><span class="conexion">SOPORTE TECNICO</span></h5>
+                    <br>
+                    <p class="card-text des">Somos expertos en 
+                        brindarte el soporte que 
+                        te respalda cuando más 
+                        lo necesitas.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-1"></div>
-          </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 card_sombra">
+                    <br><br>
+                    <img src="img/SVG/DOTZ-03_Servicios3.svg" class="card-img-top servi" alt="...">
+                    <br>
+                    <div class="card-body text-center">
+                    <h5 class="card-title conexion"><span class="conexion">DESARROLLO</span></h5>
+                    <br>
+                    <p class="card-text des">Desarrollamos el software 
+                        que hace realidad tus 
+                        ideas y transforma 
+                        oportunidades</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <br><br>
         <div class="row">
@@ -144,13 +172,41 @@
                 <img src="img/SVG/DOTZ-04_Impacto1.svg" alt="">
             </div>
             <div class="col-9">
-
             </div>
+        </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <p class="conexion text-center text-lg-start"><span class="verde">PARA LOS QUE SUEÑAN EN GRANDE</span></p>
+                    <p class="des text-center text-lg-start">DOTZ es para aquellos que ven en cada desafío una
+                        posibilidad de crecer. Porque cada visión merece
+                        convertirse en realidad,<span class="teto"> nosotros te ayudamos a conectar
+                        los puntos entre tus ideas y el impacto que deseas lograr.</span><br><br>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 position-relative">
+                    <div class="line-container2 mx-auto mx-lg-0" style="z-index: 0;">
+                        <div class="line2"></div>
+                    </div>
+                    <div class="row position-relative" style="z-index: 1;">
+                        <div class="col-12 col-md-4 mb-3 text-center">
+                            <img src="img/SVG/DOTZ-04_Impacto2.svg" alt="Responsive Image 1" class="img-fluid">
+                            <p class="mt-2 conexion">EMPRENDEDOR</p>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3 text-center">
+                            <img src="img/SVG/DOTZ-04_Impacto3.svg" alt="Responsive Image 2" class="img-fluid">
+                            <p class="mt-2 conexion">DUEÑO DE NEGOCIO</p>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3 text-center">
+                            <img src="img/SVG/DOTZ-04_Impacto4.svg" alt="Responsive Image 3" class="img-fluid">
+                            <p class="mt-2 conexion">EMPRESARIO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
 <script src="js/efect.js"></script>
 </body>
 </html>
-
-
-    
