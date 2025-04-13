@@ -278,3 +278,7 @@
 .reveal-right {
     transform: translateX(100%);
 }
+.imagepx{
+    width: 150px;
+    height: 150px;
+}
