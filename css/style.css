@@ -28,7 +28,21 @@
     text-align: center;
     height: 300px;
 }
-
+.jumbotroncon {
+    background-image: url('/img/SVG/DOTZ-05_Fondo.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+    text-align: center;
+    height: 400px;
+    
+}
+.jumbotroncon h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 3rem;
+    color: #0d025a;
+    margin-top: 50px;
+}
 .jumbotron p {
     font-family: 'Dosis', sans-serif;
     font-size: 30px;
